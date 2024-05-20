@@ -29,6 +29,6 @@ func (s *ServerPool) GetNextPeer() *Backend {
 	return nil
 }
 
-func (pool *ServerPool) AddService(service Backend) {
-	pool.backends = append(pool.backends, &service)
+func (pool *ServerPool) AddService(service *Backend) {
+	pool.backends = append(pool.backends, service)
 }
